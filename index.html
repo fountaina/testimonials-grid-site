@@ -5,96 +5,142 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  
+  <title>Testimonials</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
-    section {
-      display: flex;
-      justify-content: center;
-      height: 100vh;
-      align-items: center;
-      padding: 0 10%;
+    body {
+      background-color: hsl(210, 46%, 95%); 
     }
 
     .grid-container {
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 3fr 1fr;
+      margin: 10% 10%;
       gap: 50px;
-
     }
 
-    .first-grid-container {
+    .column1 {
       display: grid;
       grid-template-rows: 1fr 1fr;
       gap: 30px;
     }
 
-    .first-grid-sub-1 {
+    .row-top {
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 3fr 1fr;
       gap: 30px;
     }
 
-    .first-grid-sub-2 {
+    .row-bottom {
       display: grid;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr 3fr;
       gap: 30px;
+    }
+    
+    .bubble {
+      padding: 30px 20px 20px 20px;
+      border-radius: 10px;
+      grid-template-rows: 1fr 2fr 2fr;
+      gap: 0;
+    }
+
+    .n1 {
+      background-color: hsl(263, 55%, 52%);
+    }
+
+    .n2 {
+      background-color: hsl(217, 19%, 35%);
+    }
+
+    .n3 {
+      background-color: hsl(0, 0%, 100%);
+    }
+
+    .n4 {
+      background-color: hsl(219, 29%, 14%);
+    }
+
+    .n5 {
+      background-color: hsl(0, 0%, 100%);
+    }
+
+    .profile-pic {
+      border-radius: 50%;
+    }
+
+    img {
+      float: left;
     }
   </style>
 </head>
 <body>
-  <section>
-    <div class="grid-container">
 
-      <div class="first-grid-container">
+  <div class="grid-container">
+    <div class="column1">
+      <div class="row-top">
+        <div class="bubble n1">
 
-        <div class="first-grid-sub-1">
-          <div class="first-grid-1">
-            Daniel Clifford
-            Verified Graduate
+          <div class="profile">
+            <img class="profile-pic" src="images/image-daniel.jpg" alt="" height="60">
+            <p class="profile-name">Daniel Clifford</p>
+            <p class="graduate-status">Verified Graduate</p>
+          </div>
           
+        
+          <p class="story">
             I received a job offer mid-course, and the subjects I learned were current, if not more so, 
             in the company I joined. I honestly feel I got every penny’s worth.
-          
+        
             “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
             transition and have heard some people who had an amazing experience here. I signed up 
             for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
             The next 12 weeks was the best - and most grueling - time of my life. Since completing 
-            the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
-          
-          </div>
-          
-          <div class="first-grid-2">
-            Jonathan Walters
-            Verified Graduate
-          
-            The team was very supportive and kept me motivated
-          
-            “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
-            for a big company. This was one of the best investments I’ve made in myself. ”
-          </div>
+            the course, I've successfully switched careers, working as a Software Engineer at a VR startup. ”
+          </p>    
         </div>
+        <div class="bubble n2">
+          <div class="profile-name">Jonathan Walters</div> 
+          <div class="graduate-status">Verified Graduate</div>
+          
+          <p class="story">
+            The team was very supportive and kept me motivated
         
-        <div class="first-grid-sub-2">
-          <div class="first-grid-3">
-            Jeanette Harmon
-            Verified Graduate
-          
+            “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
+            for a big company. This was one of the best investments I’ve made in myself. ”    
+          </p>
+     
+        </div>
+      </div>
+      <div class="row-bottom">
+        <div class="bubble n3">
+
+          <div class="profile-name">Jeanette Harmon</div>
+          <div class="graduate-status">Verified Graduate</div>
+        
+          <p class="story">
             An overall wonderful and rewarding experience
-          
+        
             “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
             while doing something I love. ”
-          </div>
-  
-          <div class="first-grid-4">
-            Patrick Abrams
-            Verified Graduate
+          </p>
+        
+        </div>
+        <div class="bubble n4">
+          <div class="profile-name">Patrick Abrams</div>
+          <div class="graduate-status">Verified Graduate</div>
           
+          <p class="story">
             Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
             learning from their experiences was easy.
           
@@ -102,16 +148,16 @@
             gave me the confidence necessary to be able to go out in the world and present myself as a capable 
             junior developer. The standard is above the rest. You will get the personal attention you need from 
             an incredible community of smart and amazing people. ”
-          </div>
+          </p>
         </div>
-        
       </div>
-    
-      <div class="second-grid-container">
-
-        Kira Whittle
-        Verified Graduate
-    
+    </div>
+    <div class="column2 bubble">
+      
+      <div class="profile-name">Kira Whittle</div>
+      <div class="graduate-status">Verified Graduate</div>
+      
+      <p>
         Such a life-changing experience. Highly recommended!
     
         “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
@@ -122,14 +168,10 @@
         could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
         experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
         100% recommend! ”
-      </div>
-  
+      </p>
     </div>
-  </section>
-  
-  
+  </div>
 
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
