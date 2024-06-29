@@ -38,13 +38,13 @@
 
     .row-top {
       display: grid;
-      grid-template-columns: 3fr 1fr;
+      grid-template-columns: 2fr 1fr;
       gap: 30px;
     }
 
     .row-bottom {
       display: grid;
-      grid-template-columns: 1fr 3fr;
+      grid-template-columns: 1fr 2fr;
       gap: 30px;
     }
     
@@ -75,13 +75,40 @@
       background-color: hsl(0, 0%, 100%);
     }
 
+    /*
+    .profile {
+      display: inline-flex;
+      
+    }
+
+    .profile-text {
+      margin-left: 5%;
+      display: inline-flex;
+    }
+
+    
+    */
     .profile-pic {
       border-radius: 50%;
     }
 
     img {
       float: left;
+      margin-right: 5%;
     }
+
+    .profile-name {
+      line-height: 20px;
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      color: hsl(0, 0%, 100%);
+    }
+
+    .graduate-status {
+      opacity: 50%;
+    }
+    
   </style>
 </head>
 <body>
@@ -90,11 +117,15 @@
     <div class="column1">
       <div class="row-top">
         <div class="bubble n1">
-
           <div class="profile">
-            <img class="profile-pic" src="images/image-daniel.jpg" alt="" height="60">
-            <p class="profile-name">Daniel Clifford</p>
-            <p class="graduate-status">Verified Graduate</p>
+
+            <img class="profile-pic" src="images/image-daniel.jpg" alt="" height="40">
+            <div class="profile-text">
+                <p class="profile-name">
+                  Daniel Clifford<br>
+                  <span class="graduate-status">Verified Graduate</span>
+                </p>
+            </div>
           </div>
           
         
@@ -110,8 +141,16 @@
           </p>    
         </div>
         <div class="bubble n2">
-          <div class="profile-name">Jonathan Walters</div> 
-          <div class="graduate-status">Verified Graduate</div>
+
+          <div class="profile">
+            <img class="profile-pic" src="images/image-jonathan.jpg" alt="" height="40">
+            <div class="profile-text">
+                <p class="profile-name">
+                  Jonathan Walters<br>
+                  <span class="graduate-status">Verified Graduate</span>
+                </p>
+            </div>
+          </div>
           
           <p class="story">
             The team was very supportive and kept me motivated
@@ -125,8 +164,16 @@
       <div class="row-bottom">
         <div class="bubble n3">
 
-          <div class="profile-name">Jeanette Harmon</div>
-          <div class="graduate-status">Verified Graduate</div>
+          <div class="profile">
+            <img class="profile-pic" src="images/image-jeanette.jpg" alt="" height="40">
+            <div class="profile-text">
+                <p class="profile-name" style="color: hsl(219, 29%, 14%);">
+                  Jeanette Harmon<br>
+                  <span class="graduate-status">Verified Graduate</span>
+                </p>
+            </div>
+          </div>
+
         
           <p class="story">
             An overall wonderful and rewarding experience
@@ -136,9 +183,17 @@
           </p>
         
         </div>
-        <div class="bubble n4">
-          <div class="profile-name">Patrick Abrams</div>
-          <div class="graduate-status">Verified Graduate</div>
+        <div class="bubble n4">       
+
+          <div class="profile">
+            <img class="profile-pic" src="images/image-patrick.jpg" alt="" height="40">
+            <div class="profile-text">
+                <p class="profile-name">
+                  Patrick Abrams<br>
+                  <span class="graduate-status">Verified Graduate</span>
+                </p>
+            </div>
+          </div>
           
           <p class="story">
             Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
@@ -152,11 +207,18 @@
         </div>
       </div>
     </div>
-    <div class="column2 bubble">
-      
-      <div class="profile-name">Kira Whittle</div>
-      <div class="graduate-status">Verified Graduate</div>
-      
+    <div class="column2 bubble n5">
+  
+      <div class="profile">
+        <img class="profile-pic" src="images/image-kira.jpg" alt="" height="40">
+        <div class="profile-text">
+            <p class="profile-name" style="color: hsl(219, 29%, 14%);">
+              Kira Whittle<br>
+              <span class="graduate-status">Verified Graduate</span>
+            </p>
+        </div>
+      </div>
+
       <p>
         Such a life-changing experience. Highly recommended!
     
